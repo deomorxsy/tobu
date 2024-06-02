@@ -1,0 +1,17 @@
+### Tobu
+> a bootloader playground for POC virtualized environments
+
+
+PS1: The setup uses NASM as assembler and initially qemu-system-i386 as system emulator for the 16-bit real mode.
+PS2: isogen directory sets up a ISO9660 compressed custom distro with grub and syslinux bootloader included as
+
+This is a WIP playground POC. Its intended usage is based on the following roadmap:
+- [ ] write a first-stage bootloader in AT&T assembly
+- [ ] write a second-stage bootloader in AT&T assembly
+- [ ] normalize it to follow the multiboot specification
+- [ ] desacoplate first-stage and second-stage
+- [ ] roll it seemingly between 16-bit real mode, 32-bit protected mode or 64-bit long mode
+- [X] make it easy to be included into a ISO9660 raw virtual disk distro
+- [ ] enable PXE netboot
+- [ ] port for ARM and Xtensa architectures
+

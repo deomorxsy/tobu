@@ -26,7 +26,8 @@ boot:
 
 ; current instruction: $
 ; start of .text section: $$
-; 512 bytes, clear the rest with 0
+; the boot sector is 512 bytes,
+; clear the rest with 0
 times 510 - ($-$$) db 0
 
 vga_buffer:

@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  sysgrub:
+    environment:
+      - git_hash
+    build:
+      context: "."
+      dockerfile: "./isogen/Dockerfile"
+      tags:
+        - "localhost:5000/sysgrub:latest"
+    stop_signal: SIGINT
